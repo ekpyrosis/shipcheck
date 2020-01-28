@@ -7,8 +7,8 @@ self.addEventListener('install', e => {
             .open('todoList')
             .then(cache => {
                 return cache.addAll([
-                    `/`,
-                    `/src/js/bundle.js`,
+                    `/shipcheck`,
+                    `/shipcheck/src/js/bundle.js`,
                 ])
                 .then(() => self.skipWaiting());
             })
